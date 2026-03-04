@@ -280,6 +280,15 @@
         init();
         draw();
     </script>
-
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const namaTamu = urlParams.get('to');
+        
+        if (namaTamu) {
+            // Mengganti teks dengan nama dari URL
+            document.getElementById('nama-tamu').innerText = namaTamu;
+        }
+    </script>
+    
 </body>
 </html>
